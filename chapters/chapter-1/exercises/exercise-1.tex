@@ -8,7 +8,7 @@ We will proceed by proving the irrationality of the product $rx$ first, from whi
 	For any rational number $r$ and irrational number $x$, the product $rx$ is irrational.
 \end{proposition}
 \begin{proof}
-	Suppose to the contrary that the product $rx$ is rational, implying the existence of some integers $m$ and $n \neq 0$ such that $r = \frac{m}{n}$ and $rx = \frac{m}{n} \cdot x = \frac{mx}{n}$. If $rx$ was rational, we could multiply by $\frac{1}{r} = \frac{n}{m}$, giving us $\frac{mx}{n} \cdot \frac{n}{m} = x$. Since we have simply multiplied two (allegedly) rational numbers and the rational numbers are a field and thus closed under multiplication, the result must be a rational number. Since the result is $x$, and we began by supposing $x$ was irrational, we've arrived at our contradiction.
+	Suppose to the contrary that the product $rx$ is rational, implying the existence of some integers $m$ and $n \neq 0$ such that $r = \frac{m}{n}$ and $rx~=~\frac{m}{n}~\cdot~x = \frac{mx}{n}$. If $rx$ was rational, we could multiply by $\frac{1}{r} = \frac{n}{m}$, giving us $\frac{mx}{n} \cdot \frac{n}{m} = x$. Since we have simply multiplied two (allegedly) rational numbers and the rational numbers are a field and thus closed under multiplication, the result must be a rational number. Since the result is $x$, and we began by supposing $x$ was irrational, we've arrived at our contradiction.
 	
 	The product of a rational number $r$ and an irrational number $x$ yields an irrational number $rx$. 
 \end{proof}
@@ -17,5 +17,19 @@ We will proceed by proving the irrationality of the product $rx$ first, from whi
 	For any rational number $r$ and irrational number $x$, the sum $r + x$ is irrational.
 \end{proposition}
 \begin{proof}
-	content...
+	Suppose again to the contrary that $r + x$ is rational. Then there exist some integers $m$ and $n$ such that $n \neq 0$ and $r~=~\frac{m}{n}$. By the standard rules of adding rational numbers, this implies the following.
+	\begin{align*}
+	r + x &= \frac{m}{n} + x \\
+	&= \frac{m}{n} + x \cdot \frac{n}{n} \\
+	&= \frac{m}{n} + \frac{xn}{n} \\
+	&= \frac{m+xn}{n}
+	\end{align*}
+	Since we've supposed $r + x$ to be a rational number and the field of rational numbers $\mathbb{Q}$ is by definition closed under arithmetic operations, we should be able to add, subtract, multiply, or divide $r + x$ by any non-zero rational number and still get a rational number as a result. To verify this, we begin with the expression $\frac{\left( r + x \right) n - m}{n}$.
+	\begin{align*}
+	\frac{ \left( r + x \right) n - m }{n} &= \frac{ \left( \frac{ m + nx }{n} \right) n - m }{n} \\
+	&= \frac{m + nx - m}{n} \\
+	&= \frac{nx}{n} \\
+	&= x
+	\end{align*}
+	Since the above expression simplifies to $x$, an irrational number, the supposition that $r + x$ is rational would imply that the field of rational numbers $\mathbb{Q}$ is not closed under its addition and multiplication operations. This is false, by the definition of a field, and this contradiction leads us to conclude that for any rational number $r$ and irrational number $x$, the sum $r + x$ is irrational.
 \end{proof}
