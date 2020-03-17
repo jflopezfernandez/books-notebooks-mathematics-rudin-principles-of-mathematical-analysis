@@ -4,7 +4,38 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
+\usepackage[paperheight=8.5in,paperwidth=5.5in]{geometry}
+
+\setlength{\parindent}{0em}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem*{proposition}{Proposition}
+
+\usepackage{hyperref}
+
+\title{Solutions Notebook for\\Principles of Mathematical Analysis\\by Walter Rudin}
+\author{Jose Fernando Lopez Fernandez}
+\date{17 March, 2020 -- \today}
 
 \begin{document}
-	content...
+	\frontmatter
+	\maketitle
+	\tableofcontents
+	\mainmatter
+	\input{chapters/chapter-1.tex}
+	\input{chapters/chapter-2.tex}
+	\input{chapters/chapter-3.tex}
+	\backmatter
+	\printbibliography[heading=bibintoc]
 \end{document}
