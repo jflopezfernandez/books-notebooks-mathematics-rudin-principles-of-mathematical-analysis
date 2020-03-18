@@ -18,6 +18,9 @@
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
 
+\usepackage{imakeidx}
+\makeindex[intoc=true]
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -28,6 +31,7 @@
 \newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{exercise}{Exercise}[chapter]
 \newtheorem*{proposition}{Proposition}
+\newtheorem*{solution}{Solution}
 
 \usepackage{hyperref}
 
@@ -45,4 +49,5 @@
 	\input{chapters/chapter-3.tex}
 	\backmatter
 	\printbibliography[heading=bibintoc]
+	\printindex
 \end{document}
