@@ -1,0 +1,16 @@
+\chapter{Continuity}
+\begin{definition}
+	\cite{the-real-numbers-and-real-analysis}
+	\label{bloch-definition-3.3.1}
+	Let $A \subseteq \mathbb{R}$ be a set, and let $f : A \to \mathbb{R}$ be a function.
+	\begin{enumerate}
+		\item Let $c \in A$. The function $f$ is \textbf{continuous at} $c$ if for each $\epsilon > 0$, there is some $\delta > 0$ such that $x \in A$ and $|x-c| < \delta$ imply $\left| f(x) - f(c) \right| < \epsilon$. The function $f$ is \textbf{discontinuous} at $c$ if $f$ is not continuous at $c$; in that case we also say that $f$ has a \textbf{discontinuity at} $c$.
+		\item The function $f$ is \textbf{continuous} if it is continuous at every number in $A$. The function $f$ is \textbf{discontinuous} if it is not continuous.
+	\end{enumerate}
+\end{definition}
+
+\begin{theorem}[Intermediate Value Theorem]
+	\cite{the-real-numbers-and-real-analysis}
+	\label{bloch-theorem-3.5.2}
+	Let $\left[ a, b \right] \subseteq \mathbb{R}$ be a closed bounded interval, and let $f : \left[ a, b \right] \to \mathbb{R}$ be a function. Suppose that $f$ is continuous. Let $r \in \mathbb{R}$. If $r$ is strictly between $f(a)$ and $f(b)$, then there is some $c \in \left( a, b \right)$ such that $f(c) = r$.
+\end{theorem}
