@@ -1,11 +1,79 @@
 \chapter{Basic Topology}
 
-\setcounter{theorem}{12}
+\setcounter{theorem}{11}
+\begin{theorem}
+	\label{theorem-2.12}
+	Let $\left\lbrace E_n \right\rbrace$ for $n = 1, 2, 3, \ldots$ be a sequence of countable sets, and put
+	\begin{equation}
+	S = \bigcup_{n=1}^\infty E_n.
+	\end{equation}
+	Then $S$ is countable.
+\end{theorem}
+
+\begin{corollary}
+	\label{theorem-2.12-corollary-1}
+	Suppose $A$ is at most countable, and, for every $\alpha \in A$, $B_\alpha$ is at most countable. Put
+	\begin{equation*}
+	T = \bigcup_{\alpha \in A} B_\alpha.
+	\end{equation*}
+	Then $T$ is at most countable.
+\end{corollary}
+
 \begin{theorem}
 	\label{theorem-2.13}
 	\index{countable}
 	Let $A$ be a countable set, and let $B_n$ be the set of all $n$-tuples $\left( a_1, \ldots, a_n \right)$, where $a_k \in A$ for $\left( k = 1, \ldots, n \right)$, and the elements $a_1, \ldots, a_n$ need not be distinct. Then $B_n$ is countable.
 \end{theorem}
 
+\setcounter{theorem}{18}
+\begin{theorem}
+	\label{theorem-2.19}
+	Every neighborhood is an open set.
+\end{theorem}
+
+\begin{theorem}
+	\label{theorem-2.20}
+	If $p$ is a limit point of a set $E$, then every neighborhood of $p$ contains infinitely many points of $E$.
+\end{theorem}
+
+\setcounter{theorem}{22}
+\begin{theorem}
+	\label{theorem-2.23}
+	A set $E$ is open if and only if its complement is closed.
+\end{theorem}
+
+\begin{corollary}
+	\label{theorem-2.23-corollary-1}
+	A set $F$ is closed if and only if its complement is open.
+\end{corollary}
+
+\setcounter{theorem}{30}
+\begin{definition}
+	\label{theorem-2.31}
+	By an \textbf{\gls{open cover}} of a set $E$ in a metric space $X$ we mean a collection $\left\lbrace G_\alpha \right\rbrace$ of open subsets of $X$ such that $E \subset \cup_\alpha G_\alpha$.
+\end{definition}
+
+\begin{definition}
+	A subset $K$ of a metric space $X$ is said to be \textbf{\gls{compact}} if every open cover of $K$ contains a \textit{finite} subcover.
+\end{definition}
+
+\setcounter{theorem}{40}
+\begin{theorem}
+	\label{theorem-2.41}
+	If a set in $\mathbb{R}^k$ has one of the following three properties, then it has the other two:
+	\renewcommand{\labelenumi}{(\alph{enumi})}
+	\begin{enumerate}
+		\item $E$ is closed and bounded.
+		\item $E$ is compact.
+		\item Every infinite subset of $E$ has a limit point in $E$.
+	\end{enumerate}
+\end{theorem}
+
+\section{Exercises}
 \input{chapters/chapter-2/exercises/exercise-1.tex}
 \input{chapters/chapter-2/exercises/exercise-2.tex}
+\input{chapters/chapter-2/exercises/exercise-3.tex}
+\input{chapters/chapter-2/exercises/exercise-4.tex}
+
+\input{chapters/chapter-2/exercises/exercise-12.tex}
+\input{chapters/chapter-2/exercises/exercise-16.tex}

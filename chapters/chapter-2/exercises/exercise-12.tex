@@ -1,0 +1,10 @@
+\setcounter{exercise}{11}
+\begin{exercise}
+	Let $K \subset \mathbb{R}^1$ consist of $0$ and the numbers $\frac{1}{n}$, for $n = 1, 2, 3, \ldots$. Prove that $K$ is compact directly from the definition (without using the Heine-Borel Theorem).
+\end{exercise}
+\begin{proposition}
+	Let $K \subset \mathbb{R}^1$ consist of $0$ and the numbers $\frac{1}{n}$ for $n~=~1, 2, 3,~\ldots$. The space $K$ is compact.
+\end{proposition}
+\begin{proof}
+	Let $I_n$ be an arbitrary covering set of $K$ composed of the neighborhoods of every point $k \in K$ of radius $\frac{1}{n}$ for any $n \in \mathbb{N}$. Since the distance between two consecutive points $\frac{1}{n}$ and $\frac{1}{n+1}$ is defined by the metric $\left| \frac{1}{n+1} - \frac{1}{n} \right| = \left| \frac{1}{n(n+1)} \right|$, and $\frac{1}{n(n+1)} \leq \frac{1}{n}$ for all $n \in \mathbb{N}$, every open cover $I_n$ of $K$ has a finite subcover, and therefore $K$ is compact.
+\end{proof}
