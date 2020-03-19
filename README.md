@@ -7,11 +7,11 @@ Worked out solutions and proofs for Principles of Mathematical Analysis by Profe
 
 | Completed | Total | Progress |
 | --------- | ----- | -------- |
-|     4     |  281  |   1.42%  |
+|     5     |  281  |   1.78%  |
 
 | Chapter | Completed | Total | Progress |
 | ------- | --------- | ----- | -------- |
-|    1    |     1     |  20   |    5%    |
+|    1    |     2     |  20   |   10%    |
 |    2    |     2     |  30   |    6%    |
 |    3    |     1     |  25   |    4%    |
 |    4    |     0     |  20   |    0%    |
@@ -45,7 +45,7 @@ Worked out solutions and proofs for Principles of Mathematical Analysis by Profe
 - [ ] Exercise 15
 - [ ] Exercise 16
 - [ ] Exercise 17
-- [ ] Exercise 18
+- [x] Exercise 18
 - [ ] Exercise 19
 - [ ] Exercise 20
 

@@ -1,0 +1,19 @@
+\begin{exercise}
+	If $k \geq 2$ and $\textbf{x} \in \mathbb{R}^k$, prove that there exists $\textbf{y} \in \mathbb{R}^k$ such that $\textbf{y} \neq \textbf{0}$ but $\textbf{x} \cdot \textbf{y} = 0$. Is this also true if $k = 1$?
+\end{exercise}
+\begin{proposition}
+	Let $k \geq 2$ and $\textbf{x} \in \mathbb{R}^k$. There exists some $\textbf{y} \in \mathbb{R}^k$ where $\textbf{y} \neq \textbf{0}$ such that $\textbf{x} \cdot \textbf{y} = 0$.
+\end{proposition}
+\begin{proof}
+	Let $\textbf{x} = \left( 1, 0 \right)$ and $\textbf{y} = \left( 0, 1 \right)$. By the definition of the inner product of two vectors,
+	\begin{align*}
+	\textbf{x} \cdot \textbf{y} &= \sum_{i=1}^{2} x_iy_i \\
+	&= x_1y_1 + x_2y_2 \\
+	&= \left( 1 \cdot 0 \right) + \left( 0 \cdot 1 \right) \\
+	&= \left( 0 \right) + \left( 0 \right) \\
+	&= 0.
+	\end{align*}
+	Therefore, there exists some $\textbf{y} \in \mathbb{R}^k$ where $\textbf{y} \neq \textbf{0}$ such that $\textbf{x} \cdot \textbf{y} = 0$.
+\end{proof}
+
+This is not true for vector spaces of dimension one.
