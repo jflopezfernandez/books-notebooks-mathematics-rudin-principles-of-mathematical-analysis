@@ -1,0 +1,66 @@
+\begin{exercise}
+	Prove Proposition~\ref{pproposition-1.15}.
+\end{exercise}
+Let $x$, $y$, and $z$ be arbitrary elements of some field $F$.
+\begin{proposition}
+	If $x \neq 0$ and $xy = xz$ then $y = z$.
+\end{proposition}
+\begin{proof}
+	Suppose $x \neq 0$ and $xy = xz$. By M5, there exists some element $x^{-1} \in F$ such that $x \cdot x^{-1} = 1$. Since multiplication in a field is both commutative and associative, the order of the operation or the factors is immaterial.
+	\begin{align*}
+	xy &= xz &\\
+	x^{-1}\left(xy\right) &= x^{-1}\left(xz\right) &\text{By M5}\\
+	\left( x^{-1}x \right)y &= \left( x^{-1}x \right) z &\text{By M3}\\
+	1y &= 1z &
+	\end{align*}
+	Finally, M4 asserts the existence of an identity element $1 \in F$ such that $1 \cdot x = x$ for any element $x$ in $F$. Therefore,
+	\begin{align*}
+	1y &= y, \text{ and} \\
+	1z &= z.
+	\end{align*}
+	Therefore,
+	\begin{equation*}
+	y = z.
+	\end{equation*}
+\end{proof}
+
+\begin{proposition}
+	If $x \neq 0$ and $xy = x$ then $y = 1$.
+\end{proposition}
+\begin{proof}
+	Suppose $x \neq 0$ and $xy = x$. By M5, there exists some non-zero element $x^{-1} \in F$ such that $x^{-1}x = 1$. Since multiplication in a field is both associative and commutative, the order of the factors is immaterial to the result. Simplifying, we conclude that since $1y = y$ by M4, $y$ must equal $1$.
+	\begin{align*}
+	xy &= x & \\
+	x^{-1}xy &= x^{-1}x &\text{By M5}\\
+	1y &= 1 &\text{By M4}\\
+	y &= 1 &
+	\end{align*}
+\end{proof}
+
+\begin{proposition}
+	If $x \neq 0$ and $xy = 1$ then $y = \frac{1}{x}$.
+\end{proposition}
+\begin{proof}
+	Suppose $x \neq 0$ and $xy = 1$. The fifth axiom of multiplication in a field (M5) asserts the existence of a multiplicative inverse for every non-zero element in the field. Since we have assumed $x \neq 0$, we multiply both sides of the equation to obtain the desired result. Once again, M2 and M3 ensure the order of operations and factors is irrelevant.
+	\begin{align*}
+	xy &= 1 & \\
+	x^{-1}xy &= x^{-1}1 &\text{By M5} \\
+	1y &= 1x^{-1} &\\
+	y &= x^{-1} &\text{By M4}
+	\end{align*}
+\end{proof}
+The above result makes sense, as a field is formally defined as a commutative ring with unity with no zero-divisors and in which every non-zero element is also a unit. It should also be noted that if $y = \frac{1}{x}$ and $y = x$ are both true, then $x = y = 1$.
+
+\begin{proposition}
+	If $x \neq 0$ then $\frac{1}{\frac{1}{x}} = x$.
+\end{proposition}
+\begin{proof}
+	Suppose $x \neq 0$ and $y$ is some element in $F$ such that $y = \frac{1}{x}$. By M5, $xy = 1$. Therefore,
+	\begin{align*}
+	xy &= 1 & \\
+	xyy^{-1} &= 1 \cdot y^{-1} &\text{By M2, M3, and M5} \\
+	1x &= \frac{1}{y} &\text{By M5}\\
+	x &= \frac{1}{y} &\text{By M4}\\
+	x &= \frac{1}{\frac{1}{x}}. &
+	\end{align*}
+\end{proof}

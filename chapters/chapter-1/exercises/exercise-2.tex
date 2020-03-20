@@ -1,19 +1,16 @@
 \begin{exercise}
 	Prove that there is no rational number whose square is~$12$.
 \end{exercise}
-% I don't think it's necessary to suppose there exists a rational number whose square is 12.
-Suppose there did exist some rational number $r$ such that its square was $12$. From the assumption that $r^2~=~12$, we deduce that $r~=~\sqrt{12}$, and therefore $r~=~\sqrt{4 \cdot 3}~\equiv~2\sqrt{3}$. We will show that $\sqrt{3}$ is irrational, and by Proposition~\ref{proposition-1.1.1} the product $2\sqrt{3}$ is as well.
-
-\begin{proposition}
-	The real number $\sqrt{3}$ is irrational.
-\end{proposition}
-\begin{proof}
-	Suppose to the contrary there exists some rational number $r$ such that its square is $3$. This implies the existence of some non-zero integers $m$ and $n$ such that $r=\frac{m}{n}$ and $\frac{m^2}{n^2}=3$. Since $m$ and $n$ are in reduced form, they cannot both be even.
-	\newline\newline
-	We thus have $m^2=3n^2$. ...
-	\proofincomplete
-\end{proof}
-
 \begin{proposition}
 	There is no rational number whose square is $12$.
 \end{proposition}
+\begin{proof}
+	Let $r$ be some real number such that $r^2 = 12$. Suppose $r$ was rational, such that there existed some non-zero integers $m$ and $n$ such that $r = \frac{m}{n}$ and $\frac{m^2}{n^2} = 12$. Solving for $m$, we get the following.
+	\begin{align*}
+	\frac{m^2}{n^2} &= 12 \\
+	m^2 &= 12n^2 \\
+	m^2 &= 3 \cdot 4n^2 \\
+	m &= \sqrt{3} \cdot 2n
+	\end{align*}
+	Since $12$ is even, $12n^2$ must also be even. However, $m$ is clearly not even, as $\sqrt{3} \cdot 2n$ is not evenly divisible by $2$. This means that $m^2$ must be odd, in direct contradiction with our earlier assertion that $12n^2$ must be even. We conclude from this contradiction that there cannot exist a rational number whose square is $12$.
+\end{proof}

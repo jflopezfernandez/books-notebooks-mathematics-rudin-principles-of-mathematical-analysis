@@ -1,0 +1,23 @@
+\begin{exercise}
+	Let $E$ be a nonempty subset of an ordered set; suppose $\alpha$ is a lower bound of $E$ and $\beta$ is an upper bound of $E$. Prove that $\alpha \leq \beta$.
+\end{exercise}
+\begin{proposition}
+	Let $E$ be a non-empty subset of some ordered set $S$, and suppose that $\alpha$ and $\beta$ are lower and upper bounds of $E$, respectively. Then $\alpha \leq \beta$.
+\end{proposition}
+\begin{proof}
+	The existence of some upper bound $\beta$ implies that $E$ is bounded above, and therefore there exists some element(s) $\beta_0 \in S$ such that $\beta_0 \geq x$ for all $x \in E$. Let $U$ denote the set of all such elements. Clearly, $\beta \in U$. Let $\beta_\text{min}$ be some element in $U$ such that $\beta_\text{min} \leq \beta_0$ for all $\beta_0 \in U$. By Definition~1.8, $\beta_\text{min} = \sup E$.
+	\newline\newline
+	Analogously, the existence of some lower bound $\alpha$ implies that $E$ is bounded below, and therefore there exists some element(s) $\alpha_0 \in S$ such that $\alpha_0 \leq x$ for all $x \in E$. Let $L$ denote the set of all such elements. Again, $\alpha \in L$. Let $\alpha_\text{max}$ be some element in $L$ such that $\alpha_\text{max} \geq \alpha_0$ for all $\alpha_0 \in L$. By Definition~1.8, $\alpha_\text{max} = \inf E$.
+	\newline\newline
+	Since $\alpha$ and $\beta$ were not specifically designated to be the greatest lower bound or least upper bound of $E$, respectively, we must treat them with the requisite generality. By the definitions above, $\alpha_0 \leq \alpha_\text{max}$ for all $\alpha_0 \in L$ and $\beta_\text{min} \leq \beta_0$ for all $\beta_0 in U$, and therefore $\alpha \leq \alpha_\text{max}$ and $\beta_\text{min} \leq \beta_0$ for any arbitrary lower and upper bounds of $E$, respectively.
+	\newline\newline
+	By the definition of the infimum and supremum of an ordered set, $\inf E \leq x \leq \sup E$ for any $x \in E$, implying that
+	\begin{equation}
+	\label{equation-chapter-1-exercise-4-1}
+	\alpha \leq \inf E \leq x \leq \sup E \leq \beta,
+	\end{equation}
+	and therefore $\alpha \leq \beta$, as required.
+\end{proof}
+\begin{remark}
+	It should be noted that in~\eqref{equation-chapter-1-exercise-4-1}, equality holds only in the degenerate case were the subset $E$ of $S$ consists of a single element, and even then only if $\alpha = \inf E$ and $\beta = \sup E$, which need not be the case.
+\end{remark}
