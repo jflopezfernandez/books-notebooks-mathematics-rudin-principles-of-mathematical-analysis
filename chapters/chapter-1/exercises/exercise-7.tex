@@ -1,0 +1,13 @@
+\begin{exercise}
+	Fix $b > 1$, $y > 0$, and prove that there is a unique real $x$ such that $b^x = y$, by completing the following outline. (This $x$ is called the \textit{logarithm of $y$ to the base $b$}.)
+	\renewcommand{\labelenumi}{(\alph{enumi})}
+	\begin{enumerate}
+		\item For any positive integer $n$, $b^n - 1 \geq n \left( b - 1 \right)$.
+		\item Hence $b - 1 \geq n \left( b^{\frac{1}{n}} - 1 \right)$.
+		\item If $t > 1$ and $n > \frac{\left( b - 1 \right)}{\left( t - 1 \right)}$, then $b^{\frac{1}{n}} < t$.
+		\item If $w$ is such that $b^w < y$, then $b^{w + \frac{1}{n}} < y$ for sufficiently large $n$; to see this, apply part (c) with $t = y \cdot b^{-w}$.
+		\item If $b^w > y$, then $b^{w - \frac{1}{n}} > y$ for sufficiently large $n$.
+		\item Let $A$ be the set of all $w$ such that $b^w < y$, and show that $x = \sup A$ satisfies $b^x = y$.
+		\item Prove that this $x$ is unique.
+	\end{enumerate}
+\end{exercise}

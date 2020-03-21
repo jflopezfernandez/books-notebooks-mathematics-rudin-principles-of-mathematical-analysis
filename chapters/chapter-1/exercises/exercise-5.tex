@@ -8,5 +8,14 @@
 	Let $A$ be a nonempty set of real numbers which is bounded below, and let $-A$ be the set of all numbers $-x$, where $x \in A$. Then, $\inf A = - \sup \left( -A \right)$.
 \end{proposition}
 \begin{proof}
-	content...
+	Let $a = \inf A$ so that, by definition, $a \leq x$ for all $x \in A$. If $a = 0$ then $-a = -1 \cdot 0 = 0$. If $a < x$,
+	\begin{align*}
+	a &< x \\
+	a - a - x &< x - a - x \\
+	0 - x &< 0 - a \\
+	-x &< -a.
+	\end{align*}
+	Therefore, $-x \leq -a$ for all $x$ in $A$, and thus $-a = \sup \left( -A \right)$.
+	\newline\newline
+	By Proposition~\ref{pproposition-1.14}, $a$ equals $- \left( -a \right)$, and since $a = \inf A$ and $-a~=~\sup \left( -A \right)$, we can conclude that $\inf A = - \sup \left( -A \right)$.
 \end{proof}
