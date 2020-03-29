@@ -1,10 +1,24 @@
 \begin{exercise}
 	Let $I = \left[ 0, 1 \right]$ be the closed unit interval. Suppose $f$ is a continuous mapping of $I$ into $I$. Prove that $f(x) = x$ for at least one $x \in I$.
 \end{exercise}
-\begin{proposition}
+\begin{proposition}[1D Brouwer Fixed-Point Theorem]
 	Let $I = \left[ 0, 1\right]$ be the closed unit interval and let $f : I \to I$ be a continuous function. There exists some $x \in I$ such that $f(x) = x$.
 \end{proposition}
 \begin{proof}
-	content...
-	\proofincomplete
+	Since $f$ is an endomorphism (it's domain and codomain are the same set), then the image of $f$ is a subset of its domain, and therefore $f\left(0\right) \geq 0$ and $f\left(1\right) \leq 1$.
+	\newline\newline
+	Let us define a real function $g : I \to \mathbb{R}$, where $g\left(x\right) = f\left(x\right) - h\left(x\right)$, where $h\left(x\right) = x$ for all $x \in I$. Since the interval $I$ is closed, $h$ is continuous. By Theorem~4.9, the sum of continuous functions is continuous, and thus $g$ is continuous.
+	\newline\newline	
+	We now use our inference above to deduce that $g$ must cross the $x$-axis at some point.
+	\begin{align*}
+	f\left(0\right) &\geq 0 & f\left(1\right) &\leq 1 \\
+	f\left(0\right) - 0 &\geq 0 - 0 & f\left(1\right) - 1 &\leq 1 - 1 \\
+	g\left(0\right) &\geq 0 & g\left(1\right) &\leq 0
+	\end{align*}
+	Therefore, by the Intermediate Value Theorem (Theorem~4.23) there exists some $\xi \in \left[ 0, 1 \right]$ such that $g\left(\xi\right) = 0$. By the definition of $g$, this implies the following.
+	\begin{align*}
+	g\left(\xi\right) &= 0 \\
+	f\left(\xi\right) - \xi &= 0 \\
+	f\left(\xi\right) &= \xi
+	\end{align*}
 \end{proof}
